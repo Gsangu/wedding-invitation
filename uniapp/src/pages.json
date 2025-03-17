@@ -1,0 +1,149 @@
+{
+    "pages": [
+        {
+            "path": "pages/index/index",
+            "style": {
+                // #ifndef H5
+                "navigationStyle": "custom",
+                // #endif
+                // #ifdef H5
+                "navigationBarTitleText": "首页"
+                // #endif
+            }
+        },
+        {
+            "path": "pages/login/login",
+            "style": {
+                "navigationBarTitleText": "登录"
+            },
+            "meta": {
+                "white": true
+            }
+        },
+        {
+            "path": "pages/register/register",
+            "style": {
+                "navigationBarTitleText": "注册"
+            },
+            "meta": {
+                "white": true
+            }
+        },
+        {
+            "path": "pages/forget_pwd/forget_pwd",
+            "style": {
+                "navigationBarTitleText": "忘记密码"
+            },
+            "meta": {
+                "white": true
+            }
+        },
+        {
+            "path": "pages/wedding/index",
+            "style": {
+                "navigationBarTitleText": "婚礼邀请函"
+            }
+        },
+        {
+            "path": "pages/wedding/greet",
+            "style": {
+                "navigationBarTitleText": "好友祝福"
+            }
+        },
+        {
+            "path": "pages/wedding/map",
+            "style": {
+                "navigationBarTitleText": "酒店导航"
+            }
+        },
+        {
+            "path": "pages/wedding/alumn",
+            "style": {
+                "navigationBarTitleText": "甜蜜相册"
+            }
+        },
+        {
+            "path": "pages/customer_service/customer_service",
+            "style": {
+                "navigationBarTitleText": "联系客服"
+            },
+            "meta": {
+                "white": true
+            }
+        },
+        {
+            "path": "pages/as_us/as_us",
+            "style": {
+                "navigationBarTitleText": "关于我们"
+            }
+        },
+        {
+            "path": "pages/agreement/agreement",
+            "style": {
+                "navigationBarTitleText": "协议"
+            }
+        },
+        {
+            "path": "pages/change_password/change_password",
+            "style": {
+                "navigationBarTitleText": "修改密码"
+            },
+            "meta": {
+                "auth": true
+            }
+        }
+    ],
+    "subPackages": [
+        {
+            "root": "packages",
+            "pages": [
+                {
+                    "path": "pages/404/404",
+                    "style": {
+                        "navigationBarTitleText": "404"
+                    },
+                    "name": "404",
+                    "meta": {
+                        "white": true
+                    }
+                }
+            ]
+        }
+    ],
+    "globalStyle": {
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "商城",
+        "navigationBarBackgroundColor": "#FFFFFF",
+        "backgroundColor": "#F8F8F8",
+        "h5": {
+            "navigationStyle": "custom"
+        }
+    },
+    "tabBar": {
+        "custom": true,
+        "iconWidth": "20px",
+        "list": [
+            {
+                "iconPath": "static/images/tabbar/home.png",
+                "selectedIconPath": "static/images/tabbar/home_s.png",
+                "pagePath": "pages/index/index",
+                "text": "首页"
+            },
+            {
+                "pagePath": "pages/wedding/map",
+                "text": "婚礼导航"
+            },
+            {
+                "pagePath": "pages/wedding/alumn",
+                "text": "甜蜜相册"
+            }
+        ]
+    },
+    "easycom": {
+        "custom": {
+            "router-navigate": "uniapp-router-next/components/router-navigate/router-navigate.vue",
+            "^(?!z-paging-refresh|z-paging-load-more)z-paging(.*)": "z-paging/components/z-paging$1/z-paging$1.vue",
+            "^w-(.*)": "@/components/widgets/$1/$1.vue"
+        }
+    }
+}
